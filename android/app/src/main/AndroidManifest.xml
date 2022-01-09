@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mchapagai.flutter.clutter">
    <application
-        android:label="clutter"
+        android:label="Clutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
