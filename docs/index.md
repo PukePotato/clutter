@@ -5,3 +5,4 @@ classes, generics.
 ### Contents
 
 - [x] [Test Driven Development](/docs/tdd.md)
+- [x] [Flutter Localization](/docs/localization.md)
