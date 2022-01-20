@@ -1,6 +1,6 @@
+import 'package:clutter/generated/i18n.dart';
 import 'package:clutter/ui_kit/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 class ClutterApplication extends StatelessWidget {
@@ -10,10 +10,10 @@ class ClutterApplication extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       onGenerateTitle: (context) {
-        return AppLocalizations.of(context)!.appTitle;
+        return S.of(context).appTitle;
       },
       localizationsDelegates: const [
-        AppLocalizations.delegate,
+        S.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
@@ -44,7 +44,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.settingTitle),
+        title: Text(S.of(context).settingTitle),
       ),
       body: const Center(
         child: Text('Clutter'),

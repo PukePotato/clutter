@@ -15,6 +15,10 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+### Generating localization
+
+`flutter pub run gen_lang:generate`
+
 
 ### Dependencies
 - [x] [Dio][dio] - HTTP client for Dart, which supports Interceptors, Global configuration, Requests, etc.
@@ -22,9 +26,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ### References
 - [x] [Index](/docs/index.md)
-
-
-
 
 
 [dio]: https://pub.dev/packages/dio
