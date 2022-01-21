@@ -1,7 +1,5 @@
 # clutter
 
-A new Flutter project.
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -23,6 +21,7 @@ samples, guidance on mobile development, and a full API reference.
 ### Dependencies
 - [x] [Dio][dio] - HTTP client for Dart, which supports Interceptors, Global configuration, Requests, etc.
 - [x] [Mockito][mockito] - Mock library for Dart.
+- [x] [gen_lang][gen_lang] - Library used for localization
 
 ### References
 - [x] [Index](/docs/index.md)
@@ -30,3 +29,4 @@ samples, guidance on mobile development, and a full API reference.
 
 [dio]: https://pub.dev/packages/dio
 [mockito]: https://pub.dev/packages/mockito
+[gen_lang]: https://pub.dev/packages/gen_lang
