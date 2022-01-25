@@ -44,6 +44,18 @@ class S {
     return Intl.message("Settings", name: 'settingTitle');
   }
 
+  String get aboutTitle {
+    return Intl.message("About", name: 'aboutTitle');
+  }
+
+  String get aboutGithubContent {
+    return Intl.message("Fork it on Github", name: 'aboutGithubContent');
+  }
+
+  String get aboutDescription {
+    return Intl.message("Clutter is built using Flutter SDK. It demonstrates various flutter examples.", name: 'aboutDescription');
+  }
+
 
 }
 

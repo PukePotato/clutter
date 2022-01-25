@@ -15,6 +15,9 @@ class $en extends MessageLookupByLibrary {
   final messages = {
 		"appTitle" : MessageLookupByLibrary.simpleMessage("Clutter"),
 		"settingTitle" : MessageLookupByLibrary.simpleMessage("Settings"),
+		"aboutTitle" : MessageLookupByLibrary.simpleMessage("About"),
+		"aboutGithubContent" : MessageLookupByLibrary.simpleMessage("Fork it on Github"),
+		"aboutDescription" : MessageLookupByLibrary.simpleMessage("Clutter is built using Flutter SDK. It demonstrates various flutter examples."),
 
   };
 }
@@ -27,6 +30,9 @@ class $ne extends MessageLookupByLibrary {
   final messages = {
 		"appTitle" : MessageLookupByLibrary.simpleMessage("अव्यवस्था"),
 		"settingTitle" : MessageLookupByLibrary.simpleMessage("Settings"),
+		"aboutTitle" : MessageLookupByLibrary.simpleMessage("बारे"),
+		"aboutGithubContent" : MessageLookupByLibrary.simpleMessage("यसलाई Github मा फोर्क गर्नुहोस्"),
+		"aboutDescription" : MessageLookupByLibrary.simpleMessage("Clutter Flutter SDK प्रयोग गरेर बनाइएको हो। यसले विभिन्न फ्लटर उदाहरणहरू देखाउँछ।"),
 
   };
 }
@@ -39,6 +45,9 @@ class $es extends MessageLookupByLibrary {
   final messages = {
 		"appTitle" : MessageLookupByLibrary.simpleMessage("Desorden"),
 		"settingTitle" : MessageLookupByLibrary.simpleMessage("Settings"),
+		"aboutTitle" : MessageLookupByLibrary.simpleMessage("Acerca de"),
+		"aboutGithubContent" : MessageLookupByLibrary.simpleMessage("bifurcarlo en Github"),
+		"aboutDescription" : MessageLookupByLibrary.simpleMessage("Clutter se crea con Flutter SDK. Demuestra varios ejemplos de aleteo."),
 
   };
 }

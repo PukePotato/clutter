@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DynamicTheme {
-  static const _darkFillColor = Colors.white;
+  // static const _darkFillColor = Colors.white;
   static final Color _darkFocusColor = Colors.white.withOpacity(0.12);
   static final Color _lightFocusColor = Colors.black.withOpacity(0.12);
 
@@ -17,14 +17,14 @@ class DynamicTheme {
       scaffoldBackgroundColor: colorScheme.background,
       highlightColor: Colors.transparent,
       focusColor: focusColor,
-      snackBarTheme: SnackBarThemeData(
-        behavior: SnackBarBehavior.floating,
-        backgroundColor: Color.alphaBlend(
-          _darkFillColor.withOpacity(0.80),
-          _darkFillColor,
-        ),
-        contentTextStyle: _textTheme.subtitle1?.apply(color: _darkFillColor),
-      ),
+      // snackBarTheme: SnackBarThemeData(
+      //   behavior: SnackBarBehavior.floating,
+      //   backgroundColor: Color.alphaBlend(
+      //     _darkFillColor.withOpacity(0.80),
+      //     _darkFillColor,
+      //   ),
+      //   contentTextStyle: _textTheme.subtitle1?.apply(color: _darkFillColor),
+      // ),
     );
   }
 

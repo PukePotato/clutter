@@ -1,4 +1,8 @@
 {
   "appTitle": "Desorden",
-  "settingTitle": "Settings"
+  "settingTitle": "Settings",
+
+  "aboutTitle": "Acerca de",
+  "aboutGithubContent": "bifurcarlo en Github",
+  "aboutDescription": "Clutter se crea con Flutter SDK. Demuestra varios ejemplos de aleteo."
 }

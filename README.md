@@ -22,6 +22,8 @@ samples, guidance on mobile development, and a full API reference.
 - [x] [Dio][dio] - HTTP client for Dart, which supports Interceptors, Global configuration, Requests, etc.
 - [x] [Mockito][mockito] - Mock library for Dart.
 - [x] [gen_lang][gen_lang] - Library used for localization
+- [x] [Equatable][equatable] - A Dart package that helps to implement value based equality without needing to explicitly override == and hashCode
+- [x] [Flutter Bloc][bloc] - Library used for state management
 
 ### References
 - [x] [Index](/docs/index.md)
@@ -30,3 +32,5 @@ samples, guidance on mobile development, and a full API reference.
 [dio]: https://pub.dev/packages/dio
 [mockito]: https://pub.dev/packages/mockito
 [gen_lang]: https://pub.dev/packages/gen_lang
+[equatable]: https://pub.dev/packages/equatable
+[bloc]: https://pub.dev/packages/flutter_bloc

@@ -1,6 +1,6 @@
 import 'package:clutter/application/clutter_application_screen_keys.dart';
 import 'package:clutter/features/settings/settings_screen.dart';
-import 'package:clutter/features/tmdb/tmdb_landing_widget.dart';
+import 'package:clutter/features/tmdb/ui/movies/movies_presenter.dart';
 import 'package:clutter/navigation/page_route.dart';
 import 'package:clutter/ui_kit/clutter_images.dart';
 import 'package:flutter/material.dart';
@@ -25,8 +25,8 @@ class ClutterApplicationScreen extends StatelessWidget {
             top: kToolbarHeight,
             right: 20,
             icon: settingsIcon,
-            height: 60.0,
-            width: 60.0,
+            height: 40.0,
+            width: 40.0,
             margin: const EdgeInsets.all(0),
             padding: const EdgeInsets.all(0),
             onTap: () => pushWidgetWithFade(
@@ -50,7 +50,7 @@ class ClutterApplicationScreen extends StatelessWidget {
             onTap: () => {
               pushWidgetWithFade(
                 context,
-                const TmdbLandingWidget(),
+                const MoviesPresenter(),
               ),
             },
           ),

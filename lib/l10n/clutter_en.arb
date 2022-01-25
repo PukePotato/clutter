@@ -1,5 +1,8 @@
 {
-  "@@locale": "en",
   "appTitle": "Clutter",
-  "settingTitle": "Settings"
+  "settingTitle": "Settings",
+
+  "aboutTitle": "About",
+  "aboutGithubContent": "Fork it on Github",
+  "aboutDescription": "Clutter is built using Flutter SDK. It demonstrates various flutter examples."
 }

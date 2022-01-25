@@ -1,5 +1,8 @@
 {
-  "@@locale": "ne",
   "appTitle": "अव्यवस्था",
-  "settingTitle": "Settings"
+  "settingTitle": "Settings",
+
+  "aboutTitle": "बारे",
+  "aboutGithubContent": "यसलाई Github मा फोर्क गर्नुहोस्",
+  "aboutDescription": "Clutter Flutter SDK प्रयोग गरेर बनाइएको हो। यसले विभिन्न फ्लटर उदाहरणहरू देखाउँछ।"
 }
