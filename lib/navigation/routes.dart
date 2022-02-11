@@ -1,4 +1,4 @@
-import 'package:clutter/application/clutter_application_screen.dart';
+import 'package:clutter/application/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 /// The [Routes] provides the ability to handle routes from the underlying
@@ -9,6 +9,6 @@ class Routes {
   static const String initialRoute = '/';
 
   static final Map<String, WidgetBuilder> setUpRoutes = {
-    '/': (BuildContext context) => const ClutterApplicationScreen(),
+    '/': (BuildContext context) => const BottomNav(),
   };
 }

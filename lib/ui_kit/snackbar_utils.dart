@@ -6,11 +6,12 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> buildShowSnackBar(
 ) {
   return ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(
+      backgroundColor: Theme.of(context).colorScheme.background,
       content: Text(
         content,
-        // style: Theme.of(context).textTheme.caption?.copyWith(
-        //       color: Theme.of(context).colorScheme.primary,
-        //     ),
+        style: Theme.of(context).textTheme.caption?.copyWith(
+              color: Theme.of(context).colorScheme.onPrimary,
+            ),
       ),
       duration: const Duration(seconds: 2),
     ),

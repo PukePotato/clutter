@@ -1,6 +1,4 @@
-import 'package:clutter/features/tmdb/bloc/movies_cubit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TmdbLandingWidget extends StatelessWidget {
   const TmdbLandingWidget({Key? key}) : super(key: key);
@@ -28,30 +26,9 @@ class _TmdbScreenState extends State<TmdbScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('TMDB'),
+        title: const Text('Container'),
       ),
-      body: BlocProvider(
-        create: (BuildContext context) => MoviesCubit()..fetchMovies(),
-        child: BlocBuilder<MoviesCubit, MoviesState>(
-          builder: (context, state) {
-            if (state is MovieStateLoading) {
-              return const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-            if (state is MovieStateLoaded) {
-              final model = state.viewModel;
-              return Column(
-                children: [
-                  Text(model.movies?.first.backdropPath ?? ''),
-                ],
-              );
-            } else {
-              return Container();
-            }
-          },
-        ),
-      ),
+      body: Container(),
     );
   }
 }
