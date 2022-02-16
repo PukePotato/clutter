@@ -27,12 +27,14 @@ void main() async {
       await widgetTester.pumpWidget(widget);
       await widgetTester.pumpAndSettle();
 
-      Finder settingsWidget = find.byKey(ClutterApplicationScreenKeys().clutterScreenSettingsKey);
+      Finder settingsWidget =
+          find.byKey(ClutterApplicationScreenKeys().clutterScreenSettingsKey);
       expect(settingsWidget, findsOneWidget);
       await widgetTester.tap(settingsWidget);
       await widgetTester.pump();
 
-      expect(find.byKey(ClutterApplicationScreenKeys().clutterScreenTMDBKey), findsOneWidget);
+      expect(find.byKey(ClutterApplicationScreenKeys().clutterScreenTMDBKey),
+          findsOneWidget);
 
       // await widgetTester.dragUntilVisible(
       //   welcomeWidget, // what you want to find

@@ -8,12 +8,12 @@ import 'package:flutter/material.dart';
 import 'messages_all.dart';
 
 class S {
- 
-  static const GeneratedLocalizationsDelegate delegate = GeneratedLocalizationsDelegate();
+  static const GeneratedLocalizationsDelegate delegate =
+      GeneratedLocalizationsDelegate();
 
   static S of(BuildContext context) {
     final localization = Localizations.of<S>(context, S);
-    
+
     assert(() {
       if (localization == null) {
         throw FlutterError(
@@ -21,12 +21,13 @@ class S {
       }
       return true;
     }());
-    
+
     return localization!;
   }
-  
+
   static Future<S> load(Locale locale) {
-    final String name = locale.countryCode == null ? locale.languageCode : locale.toString();
+    final String name =
+        locale.countryCode == null ? locale.languageCode : locale.toString();
 
     final String localeName = Intl.canonicalizedLocale(name);
 
@@ -35,7 +36,7 @@ class S {
       return new S();
     });
   }
-  
+
   String get appTitle {
     return Intl.message("Clutter", name: 'appTitle');
   }
@@ -53,10 +54,10 @@ class S {
   }
 
   String get aboutDescription {
-    return Intl.message("Clutter is built using Flutter SDK. It demonstrates various flutter examples.", name: 'aboutDescription');
+    return Intl.message(
+        "Clutter is built using Flutter SDK. It demonstrates various flutter examples.",
+        name: 'aboutDescription');
   }
-
-
 }
 
 class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
@@ -64,10 +65,9 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
 
   List<Locale> get supportedLocales {
     return const <Locale>[
-			Locale("en", ""),
-			Locale("ne", ""),
-			Locale("es", ""),
-
+      Locale("en", ""),
+      Locale("ne", ""),
+      Locale("es", ""),
     ];
   }
 
@@ -87,7 +87,8 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
     };
   }
 
-  Locale _resolve(Locale? locale, Locale? fallback, Iterable<Locale> supported) {
+  Locale _resolve(
+      Locale? locale, Locale? fallback, Iterable<Locale> supported) {
     if (locale == null || !isSupported(locale)) {
       return fallback ?? supported.first;
     }
@@ -110,7 +111,7 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
 
   @override
   bool isSupported(Locale? locale) =>
-    locale != null && supportedLocales.contains(locale);
+      locale != null && supportedLocales.contains(locale);
 
   @override
   bool shouldReload(GeneratedLocalizationsDelegate old) => false;

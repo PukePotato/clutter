@@ -5,7 +5,8 @@ pushWidgetWithFade(BuildContext context, Widget widget) {
     PageRouteBuilder(
       transitionsBuilder: (context, animation, secondAnimation, child) =>
           FadeTransition(opacity: animation, child: child),
-      pageBuilder: (BuildContext context, Animation animation, Animation secondaryAnimation) {
+      pageBuilder: (BuildContext context, Animation animation,
+          Animation secondaryAnimation) {
         return widget;
       },
     ),

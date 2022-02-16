@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'sign_up_widget.dart';
 
 class DemoLandingWidget extends StatelessWidget {
   const DemoLandingWidget({Key? key}) : super(key: key);
@@ -20,8 +21,13 @@ class DemoLandingWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             ElevatedButton(
-              onPressed: () => throw UnimplementedError(),
-              child: const Text('OTP Login Page'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SignUpWidget()),
+                );
+              },
+              child: const Text('Sign Up'),
               style: ElevatedButton.styleFrom(
                 onPrimary: Theme.of(context).colorScheme.onPrimary,
                 textStyle: Theme.of(context).textTheme.button,

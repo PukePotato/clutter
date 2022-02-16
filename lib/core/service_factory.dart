@@ -65,7 +65,9 @@ class ServiceFactory {
   }) async {
     try {
       final response = await dio.get(/*baseUrl + */ url,
-          queryParameters: params, cancelToken: cancelToken, onReceiveProgress: onReceiveProgress);
+          queryParameters: params,
+          cancelToken: cancelToken,
+          onReceiveProgress: onReceiveProgress);
       return response.data;
     } on SocketException catch (e) {
       throw SocketException(e.toString());

@@ -6,7 +6,9 @@ class ImageGridView extends StatelessWidget {
   final VoidCallback? onTapGridItem;
   final String imagePath;
 
-  const ImageGridView({Key? key, required this.onTapGridItem, required this.imagePath}) : super(key: key);
+  const ImageGridView(
+      {Key? key, required this.onTapGridItem, required this.imagePath})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

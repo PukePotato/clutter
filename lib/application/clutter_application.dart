@@ -35,7 +35,8 @@ class ClutterApplication extends StatelessWidget {
           ],
           localeResolutionCallback: (locales, supportedLocales) {
             for (var locale in supportedLocales) {
-              if (locale.languageCode == locales?.languageCode && locale.countryCode == locales?.countryCode) {
+              if (locale.languageCode == locales?.languageCode &&
+                  locale.countryCode == locales?.countryCode) {
                 return locale;
               }
               return supportedLocales.first;

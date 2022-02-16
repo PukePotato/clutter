@@ -11,7 +11,8 @@ main() {
           test(
             'no match found',
             () {
-              final result = [1, 2, 3].firstWhereOrNull((element) => element == 4);
+              final result =
+                  [1, 2, 3].firstWhereOrNull((element) => element == 4);
               expect(result, null);
             },
           );
@@ -19,7 +20,8 @@ main() {
           test(
             'one match found',
             () {
-              final result = [1, 2, 3].firstWhereOrNull((element) => element == 2);
+              final result =
+                  [1, 2, 3].firstWhereOrNull((element) => element == 2);
               expect(result, 2);
             },
           );

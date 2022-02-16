@@ -35,13 +35,16 @@ class MovieResponse {
         adult: json["adult"],
         backdropPath: json["backdrop_path"],
         movieId: json["id"],
-        originalLanguage:
-            json["original_language"] == null ? null : originalLanguageValues.map[json["original_language"]],
+        originalLanguage: json["original_language"] == null
+            ? null
+            : originalLanguageValues.map[json["original_language"]],
         originalTitle: json["original_title"],
         overview: json["overview"],
         popularity: json["popularity"].toDouble(),
         posterPath: json["poster_path"],
-        releaseDate: json["release_date"] == null ? null : DateTime.parse(json["release_date"]),
+        releaseDate: json["release_date"] == null
+            ? null
+            : DateTime.parse(json["release_date"]),
         title: json["title"],
         video: json["video"],
         voteAverage: json["vote_average"].toDouble(),

@@ -1,0 +1,67 @@
+- lib/features/demo
+- tapping on a button takes you to sign up page
+NOTE: you need to use onPressed and MaterialRoute to navigate to another screen
+
+Google search: how to navigate to another widget/page/screen in flutter
+
+
+Creating the sign up page:
+- AppBar (give a title "Sign UP")
+
+Creating the body:
+
+
+
+
+
+
+
+
+class WidgetName extends StatelessWidget {
+
+    @override
+    Widget build(BuildContext context) {
+        return Scaffold(
+            appBar: AppBar(
+            // Flutter AppBar example
+            ),
+            body: Container(
+                Text();
+                Row(
+                // creating a row with multiple child
+                    children: [
+                        Image(),
+                        Image(),
+                    ]
+                );
+                Text();
+                InputFiled(
+                    // Input Field trailing checkmark
+                );
+                Text();
+                TextInputField();
+                Text();
+                InputField();
+                Button();
+                Row(
+                children: [
+                Text();
+                Tapable Text(
+                    // Flutter tapable text example
+                );
+                ]
+                );
+            );
+        );
+    }
+
+}
+
+
+
+ TextButton(onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => LogInWidget()),
+          );
+        }, child: const Text("data"))

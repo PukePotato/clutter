@@ -81,7 +81,8 @@ abstract class ClutterService<T> {
     return Future.value();
   }
 
-  Future<Response> getFromAPI(url, {dynamic data, Map<String, dynamic>? params}) async {
+  Future<Response> getFromAPI(url,
+      {dynamic data, Map<String, dynamic>? params}) async {
     Future<Response> response = restAPI.get(
       baseUrl + url,
       params: params ?? {},

@@ -22,6 +22,7 @@ class BaseMovieResponse {
         totalResults: json["total_results"],
       );
 
-  static List<MovieResponse> _movies(List<dynamic> json) =>
-      json.isNotEmpty ? json.map((movie) => MovieResponse.fromJson(movie)).toList() : [];
+  static List<MovieResponse> _movies(List<dynamic> json) => json.isNotEmpty
+      ? json.map((movie) => MovieResponse.fromJson(movie)).toList()
+      : [];
 }

@@ -5,10 +5,13 @@ class DynamicTheme {
   static final Color _darkFocusColor = Colors.white.withOpacity(0.12);
   static final Color _lightFocusColor = Colors.black.withOpacity(0.12);
 
-  static ThemeData darkTheme = _dynamicThemeData(_darkColorScheme, _darkFocusColor);
-  static ThemeData lightTheme = _dynamicThemeData(_lightColorScheme, _lightFocusColor);
+  static ThemeData darkTheme =
+      _dynamicThemeData(_darkColorScheme, _darkFocusColor);
+  static ThemeData lightTheme =
+      _dynamicThemeData(_lightColorScheme, _lightFocusColor);
 
-  static ThemeData _dynamicThemeData(ColorScheme colorScheme, Color focusColor) {
+  static ThemeData _dynamicThemeData(
+      ColorScheme colorScheme, Color focusColor) {
     return ThemeData(
       colorScheme: colorScheme,
       textTheme: _textTheme,

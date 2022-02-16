@@ -31,7 +31,9 @@ class MoviesScreen extends StatelessWidget {
     return GridView.builder(
       shrinkWrap: true,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: crossAxisCount, childAspectRatio: (itemWidth / itemHeight), crossAxisSpacing: 0.0),
+          crossAxisCount: crossAxisCount,
+          childAspectRatio: (itemWidth / itemHeight),
+          crossAxisSpacing: 0.0),
       itemCount: model.length,
       itemBuilder: (context, index) => _buildMovieCard(
         context,
@@ -42,9 +44,11 @@ class MoviesScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildMovieCard(BuildContext context, int index, List<MovieViewModel?> movies, String imagePath) {
+  Widget _buildMovieCard(BuildContext context, int index,
+      List<MovieViewModel?> movies, String imagePath) {
     // bloc.pageIndexControllerSubscription.add(index);
-    final MovieViewModel? movie = (movies.length > index) ? movies[index] : null;
+    final MovieViewModel? movie =
+        (movies.length > index) ? movies[index] : null;
 
     return ImageGridView(
       // onTapGridItem: () => _onPosterTap(context, movie),

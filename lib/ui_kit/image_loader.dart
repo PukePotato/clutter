@@ -7,7 +7,11 @@ class ImageLoader extends StatelessWidget {
   final double? width;
   final double? height;
 
-  ImageLoader({required this.imagePath, this.boxFit = BoxFit.fitWidth, this.width, this.height});
+  ImageLoader(
+      {required this.imagePath,
+      this.boxFit = BoxFit.fitWidth,
+      this.width,
+      this.height});
 
   @override
   Widget build(BuildContext context) {

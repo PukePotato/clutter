@@ -46,9 +46,10 @@ class _ClutterSliverAppState extends State<ClutterSliverApp> {
   _removeListener() => _scrollPosition?.removeListener(_positionScrollListener);
 
   _positionScrollListener() {
-    final FlexibleSpaceBarSettings? settings =
-        context.dependOnInheritedWidgetOfExactType(aspect: FlexibleSpaceBarSettings);
-    bool visible = settings == null || settings.currentExtent <= settings.minExtent;
+    final FlexibleSpaceBarSettings? settings = context
+        .dependOnInheritedWidgetOfExactType(aspect: FlexibleSpaceBarSettings);
+    bool visible =
+        settings == null || settings.currentExtent <= settings.minExtent;
     if (_isVisible != visible) {
       setState(() {
         _isVisible = visible;
